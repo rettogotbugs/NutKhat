@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutKhat - Master Your Mind, Master Your Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="app-title">🥜 NutKhat</h1>
+            <p class="app-tagline">Master Your Mind, Master Your Life</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Streak Counter Section -->
+            <section class="streak-section">
+                <div class="streak-counter">
+                    <h2 class="streak-label">Current Streak</h2>
+                    <div class="streak-number" id="streakNumber">0</div>
+                    <p class="streak-text">Days Strong 💪</p>
+                </div>
+            </section>
+
+            <!-- Avatar & Level Section -->
+            <section class="avatar-section">
+                <div class="avatar-container">
+                    <div class="avatar-emoji" id="avatarEmoji">🤡</div>
+                    <div class="avatar-info">
+                        <h3 class="avatar-title" id="avatarTitle">Just Starting</h3>
+                        <p class="avatar-name" id="avatarName">Clown</p>
+                        <p class="avatar-description" id="avatarDescription">Everyone starts somewhere!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Bar Section -->
+            <section class="progress-section">
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Progress to next level</span>
+                        <span id="progressText">0/7 days</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="actions-section">
+                <button class="btn btn--primary btn--lg checkin-btn" id="checkinBtn">
+                    <span class="btn-text">No Nut Today ✅</span>
+                </button>
+                <button class="btn btn--outline relapse-btn" id="relapseBtn">
+                    <span class="btn-text">Relapse 😔</span>
+                </button>
+            </section>
+
+            <!-- Message Display -->
+            <section class="message-section">
+                <div class="message-container" id="messageContainer">
+                    <p class="motivation-message" id="motivationMessage"></p>
+                </div>
+            </section>
+
+            <!-- Leaderboard Placeholder -->
+            <section class="leaderboard-section">
+                <div class="card leaderboard-card">
+                    <div class="card__body">
+                        <h3 class="leaderboard-title">🏆 Leaderboard</h3>
+                        <p class="leaderboard-placeholder">Coming Soon 👀</p>
+                        <div class="leaderboard-preview">
+                            <div class="preview-item">
+                                <span class="preview-rank">#1</span>
+                                <span class="preview-name">Legend Player</span>
+                                <span class="preview-streak">365 days</span>
+                            </div>
+                            <div class="preview-item">
+                                <span class="preview-rank">#2</span>
+                                <span class="preview-name">Monk Master</span>
+                                <span class="preview-streak">180 days</span>
+                            </div>
+                            <div class="preview-item">
+                                <span class="preview-rank">#3</span>
+                                <span class="preview-name">Discipline Guru</span>
+                                <span class="preview-streak">90 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>© 2025 NutKhat v1.0.0 - Stay Strong! 💯</p>
+        </footer>
+
+        <!-- Celebration Modal -->
+        <div class="modal celebration-modal hidden" id="celebrationModal">
+            <div class="modal-content">
+                <div class="celebration-content">
+                    <div class="celebration-emoji">🎉</div>
+                    <h3 class="celebration-title" id="celebrationTitle">Milestone Reached!</h3>
+                    <p class="celebration-message" id="celebrationMessage">You've unlocked a new level!</p>
+                    <button class="btn btn--primary" id="closeCelebration">Awesome! 🚀</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
